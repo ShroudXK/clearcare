@@ -1,0 +1,31 @@
+name: Reproduce ClearCare
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce snapshot workflow
+        run: python -m clearcare pipeline --as-of 2026-10-07 --output build
+      - name: Check published examples remain reproducible
+        run: python scripts/verify_examples.py
+      - uses: actions/upload-artifact@v7
+        with:
+          name: clearcare-reproduced-results
+          path: |
+            build/guides/
+            build/evaluation.json
+            build/data_quality.json
+            build/run_manifest.json
