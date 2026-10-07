@@ -1,0 +1,39 @@
+{
+  "notice": "Synthetic SQL test fixtures. No row represents an actual insurer, policy, clinician, or network determination.",
+  "plans": [
+    {
+      "plan_id": "DEMO_PLAN",
+      "plan_name": "DEMO — not a real insurance policy",
+      "network_name": "DEMO_NETWORK",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "is_synthetic": true
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "old",
+      "facility_id": "mckinley",
+      "provider_key": "DEMO_CLINICIAN",
+      "plan_id": "DEMO_PLAN",
+      "source_id": null,
+      "evidence_channel": "demo_primary",
+      "status": "out_of_network",
+      "observed_on": "2026-09-01",
+      "valid_until": "2026-09-30",
+      "is_synthetic": true
+    },
+    {
+      "observation_id": "new",
+      "facility_id": "mckinley",
+      "provider_key": "DEMO_CLINICIAN",
+      "plan_id": "DEMO_PLAN",
+      "source_id": null,
+      "evidence_channel": "demo_primary",
+      "status": "in_network",
+      "observed_on": "2026-10-01",
+      "valid_until": "2026-10-31",
+      "is_synthetic": true
+    }
+  ]
+}
