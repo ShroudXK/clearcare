@@ -1,0 +1,189 @@
+{
+  "as_of": "2026-10-07",
+  "evaluation_type": "Predefined software and data-handling scenarios; not clinical or human-subject validation.",
+  "total": 30,
+  "passed": 30,
+  "failed": 0,
+  "cases": [
+    {
+      "case": "Campus: fee distinction included",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Campus: official booking included",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Community: no campus fee assumption",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "Community: network questions included",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Follow-up: no clinical timetable assigned",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Interpreter requested",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "No interpreter requested",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "Missing insurance card",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Insurance card present",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "Prior records available",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Prior records unavailable",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Record paths mutually exclusive",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "McKinley referral condition true",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "McKinley referral condition false",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "Plan identity before network questions",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "No duplicated preparation steps",
+      "expected": 15,
+      "actual": 15,
+      "passed": true
+    },
+    {
+      "case": "Emergency skips preparation workflow",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "case": "Emergency skips insurance questions",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "Coverage is never confirmed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "Expired sources replace asserted instructions",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "No evidence before the review date",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "No network observation stays unknown",
+      "expected": "unknown",
+      "actual": "unknown",
+      "passed": true
+    },
+    {
+      "case": "Synthetic observations excluded by default",
+      "expected": "unknown",
+      "actual": "unknown",
+      "passed": true
+    },
+    {
+      "case": "Latest demo observation selected",
+      "expected": "observed_in_network",
+      "actual": "observed_in_network",
+      "passed": true
+    },
+    {
+      "case": "Demo result explicitly labeled synthetic",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "Observed network does not prove coverage",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "Expired demo observations stay unknown",
+      "expected": "unknown",
+      "actual": "unknown",
+      "passed": true
+    },
+    {
+      "case": "Provider mismatch stays unknown",
+      "expected": "unknown",
+      "actual": "unknown",
+      "passed": true
+    },
+    {
+      "case": "Facility mismatch stays unknown",
+      "expected": "unknown",
+      "actual": "unknown",
+      "passed": true
+    },
+    {
+      "case": "Disagreeing sources flagged",
+      "expected": "conflicting",
+      "actual": "conflicting",
+      "passed": true
+    }
+  ]
+}

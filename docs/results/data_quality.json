@@ -1,0 +1,218 @@
+{
+  "as_of": "2026-10-07",
+  "row_counts": {
+    "sources": 16,
+    "facilities": 4,
+    "services": 4,
+    "facility_services": 6,
+    "resources": 8,
+    "prep_steps": 22,
+    "step_applicability": 27,
+    "step_sources": 26,
+    "step_dependencies": 7,
+    "plan_versions": 0,
+    "network_observations": 0
+  },
+  "checks": [
+    {
+      "check_name": "steps_without_sources",
+      "issues": 0
+    },
+    {
+      "check_name": "steps_without_applicability",
+      "issues": 0
+    },
+    {
+      "check_name": "blank_bilingual_content",
+      "issues": 0
+    },
+    {
+      "check_name": "future_source_reviews",
+      "issues": 0
+    },
+    {
+      "check_name": "invalid_review_intervals",
+      "issues": 0
+    },
+    {
+      "check_name": "synthetic_in_production",
+      "issues": 0
+    },
+    {
+      "check_name": "observations_without_provider_identity",
+      "issues": 0
+    },
+    {
+      "check_name": "unapproved_source_or_resource_urls",
+      "issues": 0
+    },
+    {
+      "check_name": "dependency_cycles",
+      "issues": 0
+    }
+  ],
+  "issue_count": 0,
+  "source_freshness": [
+    {
+      "source_id": "carle_care",
+      "publisher": "Carle Health",
+      "title": "Get Care",
+      "url": "https://www.carle.org/home/get-care",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "carle_orthopedics",
+      "publisher": "Carle Health",
+      "title": "Orthopedics",
+      "url": "https://carle.org/services/orthopedics",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "carle_walkin",
+      "publisher": "Carle Health",
+      "title": "Convenient Care and Convenient Care Plus",
+      "url": "https://carle.org/services/convenient-care-and-convenient-care-plus",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "cms_prepare",
+      "publisher": "Centers for Medicare & Medicaid Services",
+      "title": "Be Prepared for Your Visit, Step 6",
+      "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 365,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "hc_deductible",
+      "publisher": "HealthCare.gov / CMS",
+      "title": "Deductible",
+      "url": "https://www.healthcare.gov/glossary/deductible/",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 180,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "hc_emergency",
+      "publisher": "HealthCare.gov / CMS",
+      "title": "Getting emergency care",
+      "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-emergency-care/",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 180,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "hc_network",
+      "publisher": "HealthCare.gov / CMS",
+      "title": "Getting regular medical care",
+      "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 180,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "hc_preapproval",
+      "publisher": "HealthCare.gov / CMS",
+      "title": "Preauthorization",
+      "url": "https://www.healthcare.gov/glossary/preauthorization/",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 180,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "hc_referral",
+      "publisher": "HealthCare.gov / CMS",
+      "title": "Referral",
+      "url": "https://www.healthcare.gov/glossary/referral/",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 180,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "mck_appointments",
+      "publisher": "University of Illinois McKinley Health Center",
+      "title": "Schedule/Cancel Appointments",
+      "url": "https://mckinley.illinois.edu/get-healthcare/appointments",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "mck_emergency",
+      "publisher": "University of Illinois McKinley Health Center",
+      "title": "Emergency",
+      "url": "https://mckinley.illinois.edu/emergency",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "mck_fee",
+      "publisher": "University of Illinois McKinley Health Center",
+      "title": "Health Service Fee",
+      "url": "https://mckinley.illinois.edu/fees/health-service-fee",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "mck_nurse",
+      "publisher": "University of Illinois McKinley Health Center",
+      "title": "Dial-a-Nurse",
+      "url": "https://mckinley.illinois.edu/get-healthcare/dial-nurse",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "mck_records",
+      "publisher": "University of Illinois McKinley Health Center",
+      "title": "Medical Records",
+      "url": "https://mckinley.illinois.edu/medical-services/medical-records",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "mck_referral",
+      "publisher": "University of Illinois McKinley Health Center",
+      "title": "Referral Services",
+      "url": "https://mckinley.illinois.edu/get-healthcare/referral-services",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 30,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "source_id": "nlm_visit",
+      "publisher": "National Library of Medicine / NIH",
+      "title": "Talking With Your Doctor",
+      "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+      "reviewed_on": "2026-10-07",
+      "review_interval_days": 180,
+      "days_since_review": 0,
+      "evidence_state": "within_review_interval"
+    }
+  ],
+  "note": "Review intervals are project maintenance choices, not guarantees of current accuracy."
+}
