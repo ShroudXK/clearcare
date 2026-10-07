@@ -1,0 +1,516 @@
+{
+  "context": {
+    "scenario": "fracture_followup",
+    "needs_interpreter": true,
+    "has_insurance_card": true,
+    "has_prior_records": true,
+    "mckinley_referral": false,
+    "emergency": false
+  },
+  "as_of": "2026-10-07",
+  "scope": "UIUC / Champaign–Urbana; navigation and preparation only",
+  "translation": "Chinese text is a project translation, not an official translation.",
+  "network_status": "unknown",
+  "coverage_confirmed": false,
+  "mode": "preparation",
+  "steps": [
+    {
+      "step_id": "care_types",
+      "sort_order": 10,
+      "kind": "education",
+      "title_en": "Understand the care entry points",
+      "title_zh": "理解不同就医入口",
+      "body_en": "Review official descriptions of primary care, walk-in care, and emergency departments. These labels describe services; this guide does not choose a care level from symptoms.",
+      "body_zh": "查看官方对 primary care、walk-in care 和 emergency department 的说明。本指南解释服务类型，不根据症状判断应去哪类机构。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "carle_care",
+          "publisher": "Carle Health",
+          "title": "Get Care",
+          "url": "https://www.carle.org/home/get-care",
+          "format": "html",
+          "locator": "Care types; CARE line; patient information line",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "326-CARE|Emergency Care|Primary Care",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "nurse_help",
+      "sort_order": 20,
+      "kind": "action",
+      "title_en": "Ask a healthcare professional when unsure",
+      "title_zh": "不确定时咨询医疗人员",
+      "body_en": "McKinley lists a 24/7 nurse phone service at 217-333-2700. Ask whether you are eligible to use it.",
+      "body_zh": "McKinley 公布了 24/7 护士电话服务：217-333-2700。请确认自己是否有资格使用。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "mck_nurse",
+          "publisher": "University of Illinois McKinley Health Center",
+          "title": "Dial-a-Nurse",
+          "url": "https://mckinley.illinois.edu/get-healthcare/dial-nurse",
+          "format": "html",
+          "locator": "Dial-a-Nurse",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "24/7|217-333-2700",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "follow_instructions",
+      "sort_order": 25,
+      "kind": "action",
+      "title_en": "Start with your existing follow-up instructions",
+      "title_zh": "先查看已有复诊要求",
+      "body_en": "Use the follow-up instructions from your treating clinician. Contact that team to clarify the next visit and which specialist to contact. This guide does not set a treatment timetable.",
+      "body_zh": "先查看治疗医生提供的 follow-up instructions；向原治疗团队确认下一次就诊和应联系的专科。本指南不设定治疗或复诊时间。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "cms_prepare",
+          "publisher": "Centers for Medicare & Medicaid Services",
+          "title": "Be Prepared for Your Visit, Step 6",
+          "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+          "format": "pdf",
+          "locator": "PDF pages 4-7 (one-based)",
+          "review_interval_days": 365,
+          "publication_note": "2018-07",
+          "anchors": "Insurance card|Photo identification|Do I need a referral",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "plan_identity",
+      "sort_order": 35,
+      "kind": "question",
+      "title_en": "Identify your exact insurance plan",
+      "title_zh": "确认具体保险计划",
+      "body_en": "Use your insurance documents or contact your insurer to identify the plan and its provider directory. An insurer name alone is not enough to confirm a provider network.",
+      "body_zh": "查看保险文件或联系保险公司，确认具体 plan 及 provider directory。仅知道保险公司名称，不足以确认医生属于哪个网络。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "hc_network",
+          "publisher": "HealthCare.gov / CMS",
+          "title": "Getting regular medical care",
+          "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/",
+          "format": "html",
+          "locator": "Finding a doctor in your plan",
+          "review_interval_days": 180,
+          "publication_note": null,
+          "anchors": "provider directory|Call your insurer",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "network_check",
+      "sort_order": 40,
+      "kind": "question",
+      "title_en": "Check the provider, location, and plan together",
+      "title_zh": "同时核实医生、地点和保险计划",
+      "body_en": "Check your plan directory and confirm with the insurer and office. Ask about the named clinician and visit location. Network participation is separate from coverage of a particular service.",
+      "body_zh": "查看计划目录，并向保险公司和诊所确认具体医生与就诊地点。属于网络内，不等于某项服务一定获得 coverage。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "hc_network",
+          "publisher": "HealthCare.gov / CMS",
+          "title": "Getting regular medical care",
+          "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/",
+          "format": "html",
+          "locator": "Finding a doctor in your plan",
+          "review_interval_days": 180,
+          "publication_note": null,
+          "anchors": "provider directory|Call your insurer",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "referral_check",
+      "sort_order": 45,
+      "kind": "question",
+      "title_en": "Ask whether a referral is needed",
+      "title_zh": "确认是否需要转诊单",
+      "body_en": "Ask the insurer and specialist office whether this visit requires a referral. A referral is an order to see a specialist or receive certain services; requirements vary.",
+      "body_zh": "向保险公司与专科诊所确认这次就诊是否需要 referral。Referral 是转诊至专科或某些服务的医嘱；要求会因情况而异。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "hc_referral",
+          "publisher": "HealthCare.gov / CMS",
+          "title": "Referral",
+          "url": "https://www.healthcare.gov/glossary/referral/",
+          "format": "html",
+          "locator": "Glossary definition",
+          "review_interval_days": 180,
+          "publication_note": null,
+          "anchors": "written order|specialist",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "prior_approval",
+      "sort_order": 50,
+      "kind": "question",
+      "title_en": "Ask about prior authorization for planned services",
+      "title_zh": "询问计划中的服务是否需要预授权",
+      "body_en": "For planned services, ask whether prior authorization is required and who submits it. Preauthorization is not a promise that the plan will cover the cost.",
+      "body_zh": "对于计划中的服务，询问是否需要 prior authorization，以及由谁申请。获得预授权不代表保险一定支付费用。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "hc_preapproval",
+          "publisher": "HealthCare.gov / CMS",
+          "title": "Preauthorization",
+          "url": "https://www.healthcare.gov/glossary/preauthorization/",
+          "format": "html",
+          "locator": "Glossary definition",
+          "review_interval_days": 180,
+          "publication_note": null,
+          "anchors": "Preauthorization|promise",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "cost_questions",
+      "sort_order": 55,
+      "kind": "question",
+      "title_en": "Ask what costs remain your responsibility",
+      "title_zh": "确认需要自付的费用",
+      "body_en": "Ask your insurer how the deductible and other cost sharing apply to the planned visit. This project does not estimate a final bill.",
+      "body_zh": "向保险公司询问 deductible 和其他费用分担如何适用于这次就诊。本项目不估算最终账单。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "hc_deductible",
+          "publisher": "HealthCare.gov / CMS",
+          "title": "Deductible",
+          "url": "https://www.healthcare.gov/glossary/deductible/",
+          "format": "html",
+          "locator": "Glossary definition",
+          "review_interval_days": 180,
+          "publication_note": null,
+          "anchors": "Deductible|covered health care",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "book_community",
+      "sort_order": 60,
+      "kind": "question",
+      "title_en": "Confirm the booking route and availability",
+      "title_zh": "确认预约方式和是否接诊",
+      "body_en": "Use the official care entry or office contact. Say whether you are a new patient and explain the visit purpose. Ask whether that visit type can be booked online.",
+      "body_zh": "使用官方就医入口或联系办公室。说明是否为新患者以及就诊目的；确认该类就诊是否能在线预约。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "carle_care",
+          "publisher": "Carle Health",
+          "title": "Get Care",
+          "url": "https://www.carle.org/home/get-care",
+          "format": "html",
+          "locator": "Care types; CARE line; patient information line",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "326-CARE|Emergency Care|Primary Care",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        },
+        {
+          "source_id": "cms_prepare",
+          "publisher": "Centers for Medicare & Medicaid Services",
+          "title": "Be Prepared for Your Visit, Step 6",
+          "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+          "format": "pdf",
+          "locator": "PDF pages 4-7 (one-based)",
+          "review_interval_days": 365,
+          "publication_note": "2018-07",
+          "anchors": "Insurance card|Photo identification|Do I need a referral",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "interpreter",
+      "sort_order": 65,
+      "kind": "question",
+      "title_en": "Request an interpreter ahead of time",
+      "title_zh": "提前询问口译支持",
+      "body_en": "Call the office before the visit to request an interpreter. Confirm arrangements; this project does not assume every location has the same language services.",
+      "body_zh": "就诊前联系办公室申请 interpreter，并确认安排。本项目不假设每个地点提供相同的语言服务。",
+      "condition_key": "needs_interpreter",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "records_ready",
+      "sort_order": 70,
+      "kind": "question",
+      "title_en": "Ask how to transfer existing records",
+      "title_zh": "询问如何提交已有病历",
+      "body_en": "Ask the receiving office which existing records it needs and how to send them. McKinley uses an authorization process for record requests; allow time for processing.",
+      "body_zh": "向接收诊所确认需要哪些已有病历及提交方式。McKinley 申请病历需要授权流程，应留出处理时间。",
+      "condition_key": "has_prior_records",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "cms_prepare",
+          "publisher": "Centers for Medicare & Medicaid Services",
+          "title": "Be Prepared for Your Visit, Step 6",
+          "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+          "format": "pdf",
+          "locator": "PDF pages 4-7 (one-based)",
+          "review_interval_days": 365,
+          "publication_note": "2018-07",
+          "anchors": "Insurance card|Photo identification|Do I need a referral",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        },
+        {
+          "source_id": "mck_records",
+          "publisher": "University of Illinois McKinley Health Center",
+          "title": "Medical Records",
+          "url": "https://mckinley.illinois.edu/medical-services/medical-records",
+          "format": "html",
+          "locator": "Requesting information from the McKinley EHR",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "authorization form|two weeks",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "documents",
+      "sort_order": 75,
+      "kind": "action",
+      "title_en": "Prepare identification and visit documents",
+      "title_zh": "准备身份与就诊文件",
+      "body_en": "Bring available insurance documentation, photo identification, and any requested forms. Ask the office about payment requirements.",
+      "body_zh": "准备已有保险凭证、带照片的身份证明及诊所要求的表格，并确认付款要求。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "cms_prepare",
+          "publisher": "Centers for Medicare & Medicaid Services",
+          "title": "Be Prepared for Your Visit, Step 6",
+          "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+          "format": "pdf",
+          "locator": "PDF pages 4-7 (one-based)",
+          "review_interval_days": 365,
+          "publication_note": "2018-07",
+          "anchors": "Insurance card|Photo identification|Do I need a referral",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "medications",
+      "sort_order": 80,
+      "kind": "action",
+      "title_en": "Prepare medication and allergy information",
+      "title_zh": "准备用药与过敏信息",
+      "body_en": "Make a list of medicines, supplements, allergies, and questions. Keep the list with you rather than entering personal medical details into this demo.",
+      "body_zh": "整理药物、补充剂、过敏情况和问题清单。自行携带，不需要在本演示中输入个人医疗详情。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "questions",
+      "sort_order": 85,
+      "kind": "action",
+      "title_en": "Write down questions and take notes",
+      "title_zh": "写下问题并记录回答",
+      "body_en": "Prepare the questions you want to discuss. During the visit, take notes and ask for clarification when an explanation is unclear.",
+      "body_zh": "提前写下想讨论的问题；就诊时记录回答，听不明白时要求解释。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "next_steps",
+      "sort_order": 100,
+      "kind": "question",
+      "title_en": "Confirm what happens after the visit",
+      "title_zh": "确认就诊后的下一步",
+      "body_en": "Ask for written next steps, the timing of any follow-up, and whom to contact with questions. Follow the treating clinician's instructions.",
+      "body_zh": "询问书面的后续步骤、复诊安排，以及有问题时联系谁；遵循治疗医生的要求。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "cms_prepare",
+          "publisher": "Centers for Medicare & Medicaid Services",
+          "title": "Be Prepared for Your Visit, Step 6",
+          "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+          "format": "pdf",
+          "locator": "PDF pages 4-7 (one-based)",
+          "review_interval_days": 365,
+          "publication_note": "2018-07",
+          "anchors": "Insurance card|Photo identification|Do I need a referral",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        },
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "resource_id": "r_carle_ortho",
+      "scenario": "fracture_followup",
+      "title_en": "Carle orthopedics information and doctor directory",
+      "title_zh": "Carle 骨科信息及医生目录",
+      "url": "https://carle.org/services/orthopedics",
+      "phone": null,
+      "source_id": "carle_orthopedics",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "resource_id": "r_mck_nurse",
+      "scenario": "all",
+      "title_en": "McKinley Dial-a-Nurse",
+      "title_zh": "McKinley 护士咨询",
+      "url": "https://mckinley.illinois.edu/get-healthcare/dial-nurse",
+      "phone": "217-333-2700",
+      "source_id": "mck_nurse",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "resource_id": "r_mck_records",
+      "scenario": "fracture_followup",
+      "title_en": "McKinley record request",
+      "title_zh": "McKinley 病历申请",
+      "url": "https://mckinley.illinois.edu/medical-services/medical-records",
+      "phone": null,
+      "source_id": "mck_records",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "resource_id": "r_mck_referral",
+      "scenario": "fracture_followup",
+      "title_en": "McKinley referral support",
+      "title_zh": "McKinley 转诊支持",
+      "url": "https://mckinley.illinois.edu/get-healthcare/referral-services",
+      "phone": null,
+      "source_id": "mck_referral",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "resource_id": "r_plan",
+      "scenario": "all",
+      "title_en": "How to check a provider network",
+      "title_zh": "如何查询保险网络",
+      "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/",
+      "phone": null,
+      "source_id": "hc_network",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    }
+  ],
+  "office_questions": [
+    "I'm a new patient arranging a visit. Do you accept new patients, and how should I book?",
+    "Which clinician and location will I see? Which documents or prior records should I bring?",
+    "I was already treated for a fracture and am arranging follow-up. Do I need a referral, and how should my existing records be sent?",
+    "Could you arrange a Mandarin interpreter? Please confirm how this will work for my appointment."
+  ],
+  "insurer_questions": [
+    "My exact plan and network are [plan/network]. Is [clinician] at [location] in this network?",
+    "For the planned service [service], what coverage conditions, referral requirements, or prior authorization apply?",
+    "What deductible or other cost sharing may apply? Can you provide a reference number for this conversation?"
+  ],
+  "script_note": "Project-written question templates. They ask for confirmation and do not state provider or insurer requirements."
+}

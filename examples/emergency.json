@@ -1,0 +1,21 @@
+{
+  "context": {
+    "scenario": "fracture_followup",
+    "needs_interpreter": true,
+    "has_insurance_card": true,
+    "has_prior_records": true,
+    "mckinley_referral": false,
+    "emergency": true
+  },
+  "as_of": "2026-10-07",
+  "scope": "UIUC / Champaign–Urbana; navigation and preparation only",
+  "translation": "Chinese text is a project translation, not an official translation.",
+  "network_status": "unknown",
+  "coverage_confirmed": false,
+  "mode": "emergency",
+  "steps": [],
+  "resources": [],
+  "emergency_message": "For a medical emergency, call 911 or seek the nearest emergency department. Do not delay emergency care for these appointment or insurance steps.",
+  "emergency_message_zh": "医疗紧急情况请拨打 911 或寻求最近的急诊科帮助。不要为完成预约或保险步骤而延误急诊。",
+  "emergency_source": "https://www.healthcare.gov/using-marketplace-coverage/getting-emergency-care/"
+}

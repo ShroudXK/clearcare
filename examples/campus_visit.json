@@ -1,0 +1,337 @@
+{
+  "context": {
+    "scenario": "campus_visit",
+    "needs_interpreter": true,
+    "has_insurance_card": true,
+    "has_prior_records": true,
+    "mckinley_referral": false,
+    "emergency": false
+  },
+  "as_of": "2026-10-07",
+  "scope": "UIUC / Champaign–Urbana; navigation and preparation only",
+  "translation": "Chinese text is a project translation, not an official translation.",
+  "network_status": "unknown",
+  "coverage_confirmed": false,
+  "mode": "preparation",
+  "steps": [
+    {
+      "step_id": "care_types",
+      "sort_order": 10,
+      "kind": "education",
+      "title_en": "Understand the care entry points",
+      "title_zh": "理解不同就医入口",
+      "body_en": "Review official descriptions of primary care, walk-in care, and emergency departments. These labels describe services; this guide does not choose a care level from symptoms.",
+      "body_zh": "查看官方对 primary care、walk-in care 和 emergency department 的说明。本指南解释服务类型，不根据症状判断应去哪类机构。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "carle_care",
+          "publisher": "Carle Health",
+          "title": "Get Care",
+          "url": "https://www.carle.org/home/get-care",
+          "format": "html",
+          "locator": "Care types; CARE line; patient information line",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "326-CARE|Emergency Care|Primary Care",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "nurse_help",
+      "sort_order": 20,
+      "kind": "action",
+      "title_en": "Ask a healthcare professional when unsure",
+      "title_zh": "不确定时咨询医疗人员",
+      "body_en": "McKinley lists a 24/7 nurse phone service at 217-333-2700. Ask whether you are eligible to use it.",
+      "body_zh": "McKinley 公布了 24/7 护士电话服务：217-333-2700。请确认自己是否有资格使用。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "mck_nurse",
+          "publisher": "University of Illinois McKinley Health Center",
+          "title": "Dial-a-Nurse",
+          "url": "https://mckinley.illinois.edu/get-healthcare/dial-nurse",
+          "format": "html",
+          "locator": "Dial-a-Nurse",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "24/7|217-333-2700",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "fee_difference",
+      "sort_order": 30,
+      "kind": "education",
+      "title_en": "Separate the campus health fee from insurance",
+      "title_zh": "区分校内健康服务费与保险",
+      "body_en": "McKinley services use the Health Service Fee, with exclusions. The fee does not pay for outside care, including referrals; ask about campus eligibility and any separate charges.",
+      "body_zh": "McKinley 服务使用 Health Service Fee，但有除外项目。该费用不支付校外就医，包括转诊；请确认校内服务资格及额外收费。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "mck_fee",
+          "publisher": "University of Illinois McKinley Health Center",
+          "title": "Health Service Fee",
+          "url": "https://mckinley.illinois.edu/fees/health-service-fee",
+          "format": "html",
+          "locator": "Health Service Fee; exclusions; payment information",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "outside McKinley|does not accept health insurance",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "book_mck",
+      "sort_order": 60,
+      "kind": "action",
+      "title_en": "Use the official McKinley appointment entry",
+      "title_zh": "使用 McKinley 官方预约入口",
+      "body_en": "Most appointments can be scheduled through MyMcKinley or by calling 217-333-2700. Confirm the visit type with the office.",
+      "body_zh": "多数预约可以通过 MyMcKinley 或拨打 217-333-2700 完成。向办公室确认就诊类型。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "mck_appointments",
+          "publisher": "University of Illinois McKinley Health Center",
+          "title": "Schedule/Cancel Appointments",
+          "url": "https://mckinley.illinois.edu/get-healthcare/appointments",
+          "format": "html",
+          "locator": "Schedule/Cancel Appointments",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "217-333-2700|two hours|MyMcKinley",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "interpreter",
+      "sort_order": 65,
+      "kind": "question",
+      "title_en": "Request an interpreter ahead of time",
+      "title_zh": "提前询问口译支持",
+      "body_en": "Call the office before the visit to request an interpreter. Confirm arrangements; this project does not assume every location has the same language services.",
+      "body_zh": "就诊前联系办公室申请 interpreter，并确认安排。本项目不假设每个地点提供相同的语言服务。",
+      "condition_key": "needs_interpreter",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "documents",
+      "sort_order": 75,
+      "kind": "action",
+      "title_en": "Prepare identification and visit documents",
+      "title_zh": "准备身份与就诊文件",
+      "body_en": "Bring available insurance documentation, photo identification, and any requested forms. Ask the office about payment requirements.",
+      "body_zh": "准备已有保险凭证、带照片的身份证明及诊所要求的表格，并确认付款要求。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "cms_prepare",
+          "publisher": "Centers for Medicare & Medicaid Services",
+          "title": "Be Prepared for Your Visit, Step 6",
+          "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+          "format": "pdf",
+          "locator": "PDF pages 4-7 (one-based)",
+          "review_interval_days": 365,
+          "publication_note": "2018-07",
+          "anchors": "Insurance card|Photo identification|Do I need a referral",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "medications",
+      "sort_order": 80,
+      "kind": "action",
+      "title_en": "Prepare medication and allergy information",
+      "title_zh": "准备用药与过敏信息",
+      "body_en": "Make a list of medicines, supplements, allergies, and questions. Keep the list with you rather than entering personal medical details into this demo.",
+      "body_zh": "整理药物、补充剂、过敏情况和问题清单。自行携带，不需要在本演示中输入个人医疗详情。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "questions",
+      "sort_order": 85,
+      "kind": "action",
+      "title_en": "Write down questions and take notes",
+      "title_zh": "写下问题并记录回答",
+      "body_en": "Prepare the questions you want to discuss. During the visit, take notes and ask for clarification when an explanation is unclear.",
+      "body_zh": "提前写下想讨论的问题；就诊时记录回答，听不明白时要求解释。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "cancel_policy",
+      "sort_order": 90,
+      "kind": "education",
+      "title_en": "Check the cancellation policy",
+      "title_zh": "查看取消预约要求",
+      "body_en": "McKinley publishes a two-hour cancellation deadline and a missed-appointment charge. Recheck the current policy when booking; other offices may use different rules.",
+      "body_zh": "McKinley 公布了提前两小时取消的要求及未按时取消的费用。预约时重新确认当前规定；其他诊所规则可能不同。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "mck_appointments",
+          "publisher": "University of Illinois McKinley Health Center",
+          "title": "Schedule/Cancel Appointments",
+          "url": "https://mckinley.illinois.edu/get-healthcare/appointments",
+          "format": "html",
+          "locator": "Schedule/Cancel Appointments",
+          "review_interval_days": 30,
+          "publication_note": null,
+          "anchors": "217-333-2700|two hours|MyMcKinley",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    },
+    {
+      "step_id": "next_steps",
+      "sort_order": 100,
+      "kind": "question",
+      "title_en": "Confirm what happens after the visit",
+      "title_zh": "确认就诊后的下一步",
+      "body_en": "Ask for written next steps, the timing of any follow-up, and whom to contact with questions. Follow the treating clinician's instructions.",
+      "body_zh": "询问书面的后续步骤、复诊安排，以及有问题时联系谁；遵循治疗医生的要求。",
+      "condition_key": "always",
+      "evidence_state": "within_review_interval",
+      "sources": [
+        {
+          "source_id": "cms_prepare",
+          "publisher": "Centers for Medicare & Medicaid Services",
+          "title": "Be Prepared for Your Visit, Step 6",
+          "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+          "format": "pdf",
+          "locator": "PDF pages 4-7 (one-based)",
+          "review_interval_days": 365,
+          "publication_note": "2018-07",
+          "anchors": "Insurance card|Photo identification|Do I need a referral",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        },
+        {
+          "source_id": "nlm_visit",
+          "publisher": "National Library of Medicine / NIH",
+          "title": "Talking With Your Doctor",
+          "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+          "format": "html",
+          "locator": "Summary",
+          "review_interval_days": 180,
+          "publication_note": "2024-10-05",
+          "anchors": "interpreter|written instructions|allergies",
+          "reviewed_on": "2026-10-07",
+          "review_method": "Primary-source desk review; English/Chinese wording checked in this project"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "resource_id": "r_mck_book",
+      "scenario": "campus_visit",
+      "title_en": "McKinley appointment entry",
+      "title_zh": "McKinley 预约入口",
+      "url": "https://mckinley.illinois.edu/get-healthcare/appointments",
+      "phone": "217-333-2700",
+      "source_id": "mck_appointments",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "resource_id": "r_mck_nurse",
+      "scenario": "all",
+      "title_en": "McKinley Dial-a-Nurse",
+      "title_zh": "McKinley 护士咨询",
+      "url": "https://mckinley.illinois.edu/get-healthcare/dial-nurse",
+      "phone": "217-333-2700",
+      "source_id": "mck_nurse",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    },
+    {
+      "resource_id": "r_plan",
+      "scenario": "all",
+      "title_en": "How to check a provider network",
+      "title_zh": "如何查询保险网络",
+      "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/",
+      "phone": null,
+      "source_id": "hc_network",
+      "reviewed_on": "2026-10-07",
+      "evidence_state": "within_review_interval"
+    }
+  ],
+  "office_questions": [
+    "I'm a new patient arranging a visit. Do you accept new patients, and how should I book?",
+    "Which clinician and location will I see? Which documents or prior records should I bring?",
+    "Could you arrange a Mandarin interpreter? Please confirm how this will work for my appointment."
+  ],
+  "insurer_questions": [
+    "My exact plan and network are [plan/network]. Is [clinician] at [location] in this network?",
+    "For the planned service [service], what coverage conditions, referral requirements, or prior authorization apply?",
+    "What deductible or other cost sharing may apply? Can you provide a reference number for this conversation?"
+  ],
+  "script_note": "Project-written question templates. They ask for confirmation and do not state provider or insurer requirements."
+}
