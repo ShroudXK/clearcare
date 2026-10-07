@@ -1,0 +1,9 @@
+resource_id,scenario,title_en,title_zh,url,phone,source_id
+r_mck_book,campus_visit,McKinley appointment entry,McKinley 预约入口,https://mckinley.illinois.edu/get-healthcare/appointments,217-333-2700,mck_appointments
+r_mck_nurse,all,McKinley Dial-a-Nurse,McKinley 护士咨询,https://mckinley.illinois.edu/get-healthcare/dial-nurse,217-333-2700,mck_nurse
+r_mck_records,fracture_followup,McKinley record request,McKinley 病历申请,https://mckinley.illinois.edu/medical-services/medical-records,,mck_records
+r_mck_referral,fracture_followup,McKinley referral support,McKinley 转诊支持,https://mckinley.illinois.edu/get-healthcare/referral-services,,mck_referral
+r_carle_care,community_visit,Carle care options and CARE line,Carle 就医入口与 CARE 咨询,https://www.carle.org/home/get-care,217-326-2273,carle_care
+r_carle_walkin,community_visit,Carle walk-in information,Carle walk-in 门诊信息,https://carle.org/services/convenient-care-and-convenient-care-plus,,carle_walkin
+r_carle_ortho,fracture_followup,Carle orthopedics information and doctor directory,Carle 骨科信息及医生目录,https://carle.org/services/orthopedics,,carle_orthopedics
+r_plan,all,How to check a provider network,如何查询保险网络,https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/,,hc_network

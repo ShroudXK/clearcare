@@ -1,0 +1,7 @@
+facility_id,service_id,source_id,scope_note
+mckinley,campus_visit,mck_fee,Most McKinley visits are covered by the Health Service Fee; eligibility and exclusions still matter.
+mckinley,radiology,mck_fee,Radiology appears in the fee-covered service list; this is not a guarantee of a specific test or availability.
+carle_er,emergency,mck_emergency,Listed emergency department.
+osf_er,emergency,mck_emergency,Listed emergency department.
+carle_urbana_south,walk_in,carle_walkin,Convenient Care Plus location listed by Carle.
+carle_urbana_south,radiology,carle_walkin,Carle describes imaging for Convenient Care Plus; individual tests and current availability need confirmation.

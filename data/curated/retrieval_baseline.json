@@ -1,0 +1,319 @@
+{
+  "mode": "Initial live retrieval evidence recorded during the 2026-10-07 desk review",
+  "sources": [
+    {
+      "source_id": "mck_fee",
+      "url": "https://mckinley.illinois.edu/fees/health-service-fee",
+      "checked_at_utc": "2026-10-07T19:52:51.250663+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://mckinley.illinois.edu/fees/health-service-fee",
+      "content_type": "text/html; charset=UTF-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "93f7a89215118154343567dbac068f9e467bf1203d2cd0780113adafd0fd2feb",
+      "bytes": 29260,
+      "extracted_characters": 9289,
+      "anchor_matches": {
+        "outside McKinley": true,
+        "does not accept health insurance": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "mck_appointments",
+      "url": "https://mckinley.illinois.edu/get-healthcare/appointments",
+      "checked_at_utc": "2026-10-07T19:52:51.251107+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://mckinley.illinois.edu/get-healthcare/appointments",
+      "content_type": "text/html; charset=UTF-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "937bff178310c821e2c8b04db819dcd2d4b5c9a5af6822734fa4ff864d264acc",
+      "bytes": 24171,
+      "extracted_characters": 6122,
+      "anchor_matches": {
+        "217-333-2700": true,
+        "two hours": true,
+        "MyMcKinley": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "mck_nurse",
+      "url": "https://mckinley.illinois.edu/get-healthcare/dial-nurse",
+      "checked_at_utc": "2026-10-07T19:52:51.251167+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://mckinley.illinois.edu/get-healthcare/dial-nurse",
+      "content_type": "text/html; charset=UTF-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "cea818bb04bf084c2275df0177f910bfc0b843c8f29b589df549a08f7184020f",
+      "bytes": 23891,
+      "extracted_characters": 5852,
+      "anchor_matches": {
+        "24/7": true,
+        "217-333-2700": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "mck_referral",
+      "url": "https://mckinley.illinois.edu/get-healthcare/referral-services",
+      "checked_at_utc": "2026-10-07T19:52:51.251205+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://mckinley.illinois.edu/get-healthcare/referral-services",
+      "content_type": "text/html; charset=UTF-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "85a0e50ae00aa5c0a26edb0b1505575c575cefcb7ec9c22efe7e24a26a8e4e98",
+      "bytes": 23733,
+      "extracted_characters": 5847,
+      "anchor_matches": {
+        "Referral Specialist": true,
+        "outside provider": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "mck_records",
+      "url": "https://mckinley.illinois.edu/medical-services/medical-records",
+      "checked_at_utc": "2026-10-07T19:52:51.409247+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://mckinley.illinois.edu/medical-services/medical-records",
+      "content_type": "text/html; charset=UTF-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "773cfaab51c2d467493bc2395b771517e1997ef40acfb2e3fae05275101ce113",
+      "bytes": 29494,
+      "extracted_characters": 8880,
+      "anchor_matches": {
+        "authorization form": true,
+        "two weeks": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "mck_emergency",
+      "url": "https://mckinley.illinois.edu/emergency",
+      "checked_at_utc": "2026-10-07T19:52:51.415106+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://mckinley.illinois.edu/emergency",
+      "content_type": "text/html; charset=UTF-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "4c9b3813285b2772096dc35d549a79239341c196d21c4adae5fc998076ae7f9a",
+      "bytes": 23039,
+      "extracted_characters": 6240,
+      "anchor_matches": {
+        "911": true,
+        "Carle Foundation Hospital": true,
+        "Heart of Mary": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "carle_care",
+      "url": "https://www.carle.org/home/get-care",
+      "checked_at_utc": "2026-10-07T19:52:51.417387+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://www.carle.org/home/get-care",
+      "content_type": "text/html; charset=utf-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "29cd0594b00e32b987396618b848dd428a87e6fb34ee00648c49bb8ad7c54594",
+      "bytes": 48238,
+      "extracted_characters": 18694,
+      "anchor_matches": {
+        "326-CARE": true,
+        "Emergency Care": true,
+        "Primary Care": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "carle_walkin",
+      "url": "https://carle.org/services/convenient-care-and-convenient-care-plus",
+      "checked_at_utc": "2026-10-07T19:52:51.463565+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://carle.org/services/convenient-care-and-convenient-care-plus",
+      "content_type": "text/html; charset=utf-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "931959b8f907d3d012d88ca7ae10015ef8499003fee1284e3a50c3a5908b813a",
+      "bytes": 63571,
+      "extracted_characters": 27211,
+      "anchor_matches": {
+        "no appointment": true,
+        "X-rays": true,
+        "Carle Urbana South Clinic": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "carle_orthopedics",
+      "url": "https://carle.org/services/orthopedics",
+      "checked_at_utc": "2026-10-07T19:52:51.556789+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://carle.org/services/orthopedics",
+      "content_type": "text/html; charset=utf-8",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "6a0339a9d14bdc0767bf5b2b3db6094cfc469a8e5bd1a9c60430551f4d33954b",
+      "bytes": 75389,
+      "extracted_characters": 31048,
+      "anchor_matches": {
+        "Orthopedics": true,
+        "FIND A DOCTOR": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "hc_network",
+      "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/",
+      "checked_at_utc": "2026-10-07T19:52:51.569109+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://www.healthcare.gov/using-marketplace-coverage/getting-medical-care/",
+      "content_type": "text/html",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "dd10591fbc5d39ec25cb18bb97b953e8c374c760d3bbef74d6ef0dc4d91e2995",
+      "bytes": 421433,
+      "extracted_characters": 3869,
+      "anchor_matches": {
+        "provider directory": true,
+        "Call your insurer": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "hc_emergency",
+      "url": "https://www.healthcare.gov/using-marketplace-coverage/getting-emergency-care/",
+      "checked_at_utc": "2026-10-07T19:52:51.822635+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://www.healthcare.gov/using-marketplace-coverage/getting-emergency-care/",
+      "content_type": "text/html",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "2504b8c4ded83026a9efb02d2e284f23bf49d747a84b7532de22bc6567b47bac",
+      "bytes": 422219,
+      "extracted_characters": 3659,
+      "anchor_matches": {
+        "true emergency": true,
+        "prior approval": true,
+        "deductible": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "hc_deductible",
+      "url": "https://www.healthcare.gov/glossary/deductible/",
+      "checked_at_utc": "2026-10-07T19:52:51.851086+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://www.healthcare.gov/glossary/deductible/",
+      "content_type": "text/html",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "2a18bf70df6fc778fbf42acb6a9c634e6b47420e55996d4f99a7ae7d24555897",
+      "bytes": 417075,
+      "extracted_characters": 3406,
+      "anchor_matches": {
+        "Deductible": true,
+        "covered health care": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "hc_preapproval",
+      "url": "https://www.healthcare.gov/glossary/preauthorization/",
+      "checked_at_utc": "2026-10-07T19:52:51.940034+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://www.healthcare.gov/glossary/preauthorization/",
+      "content_type": "text/html",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "3468af5b6513acbf2f788ecbba0853f09bac4a7d51d0eaa19f904b5d13622044",
+      "bytes": 413797,
+      "extracted_characters": 2503,
+      "anchor_matches": {
+        "Preauthorization": true,
+        "promise": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "hc_referral",
+      "url": "https://www.healthcare.gov/glossary/referral/",
+      "checked_at_utc": "2026-10-07T19:52:51.994598+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://www.healthcare.gov/glossary/referral/",
+      "content_type": "text/html",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "463c80cc05350d6ef1173c9faf8db5fdd8d5393740bd830535669cdba852185b",
+      "bytes": 413373,
+      "extracted_characters": 2315,
+      "anchor_matches": {
+        "written order": true,
+        "specialist": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "nlm_visit",
+      "url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+      "checked_at_utc": "2026-10-07T19:52:52.014005+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://medlineplus.gov/talkingwithyourdoctor.html",
+      "content_type": "text/html",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "4c1e890011bde5f4b88dadce2269e05a7ba2b981cf9cf1dbdfdd8dfbcc8529af",
+      "bytes": 102458,
+      "extracted_characters": 64956,
+      "anchor_matches": {
+        "interpreter": true,
+        "written instructions": true,
+        "allergies": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    },
+    {
+      "source_id": "cms_prepare",
+      "url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+      "checked_at_utc": "2026-10-07T19:52:52.092234+00:00",
+      "human_review_updated": false,
+      "http_status": 200,
+      "final_url": "https://www.cms.gov/marketplace/outreach-and-education/downloads/c2c-prepare-for-your-visit.pdf",
+      "content_type": "application/pdf",
+      "status": "retrieved_anchors_match",
+      "raw_sha256": "8e52e326b2e63d0f5aacf6f5a79d04328b9f84dcb809ae35620b2b84bfaaff8e",
+      "bytes": 329103,
+      "extracted_characters": 7846,
+      "anchor_matches": {
+        "Insurance card": true,
+        "Photo identification": true,
+        "Do I need a referral": true
+      },
+      "baseline_hash_matches": null,
+      "note": "Anchors and hashes are retrieval checks; they do not establish semantic accuracy."
+    }
+  ],
+  "curation_modified": false,
+  "note": "Changes and errors require review. HTTP success and matching anchors do not confirm all claims.",
+  "archive_notice": "Full pages are not redistributed. Local raw downloads are excluded from Git. Hashes describe retrieved bytes and do not establish semantic accuracy."
+}

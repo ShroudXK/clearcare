@@ -1,0 +1,5 @@
+facility_id,name,care_type,city,address,phone,entry_url,source_id,scope_note
+mckinley,McKinley Health Center,campus,Urbana,"1109 S. Lincoln Ave., Urbana, IL 61801",217-333-2700,https://mckinley.illinois.edu/get-healthcare/appointments,mck_appointments,Campus service eligibility must be confirmed.
+carle_er,Carle Foundation Hospital Emergency Department,emergency,Urbana,"611 W. Park St., Urbana, IL 61801",,https://mckinley.illinois.edu/emergency,mck_emergency,Emergency location listed by McKinley; no appointments or coverage inferred.
+osf_er,OSF HealthCare Heart of Mary Medical Center Emergency Department,emergency,Urbana,"1400 W. Park St., Urbana, IL 61801",,https://mckinley.illinois.edu/emergency,mck_emergency,Emergency location listed by McKinley; no appointments or coverage inferred.
+carle_urbana_south,Carle Urbana South Clinic,walk_in,Urbana,,,https://carle.org/services/convenient-care-and-convenient-care-plus,carle_walkin,Listed as a Convenient Care Plus location; confirm current location details on the official site.

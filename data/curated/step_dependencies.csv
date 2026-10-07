@@ -1,0 +1,8 @@
+step_id,depends_on_id
+network_check,plan_identity
+prior_approval,plan_identity
+cost_questions,plan_identity
+referral_check,follow_instructions
+records_ready,follow_instructions
+records_missing,follow_instructions
+next_steps,questions

@@ -1,0 +1,5 @@
+service_id,name_en,name_zh
+campus_visit,Campus medical visit,校内门诊
+radiology,Radiology / imaging,影像检查
+emergency,Emergency department,急诊科
+walk_in,Walk-in care,无需提前预约的门诊
