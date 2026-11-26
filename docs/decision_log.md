@@ -4,7 +4,7 @@
 |---|---|---|
 | Limit geography to Champaign–Urbana | Local official information can be inspected and traced | The guide does not represent all U.S. healthcare systems |
 | Start fracture follow-up after initial assessment | This is a concrete appointment-preparation problem | Acute injury triage remains outside the project |
-| Use Python + DuckDB + standalone SQL | Extends the lab's relational approach and makes queries reviewable | A future multi-user operational service would need a different deployment design |
+| Use Python + DuckDB + standalone SQL | Keeps the data relational and makes queries reviewable | A future multi-user operational service would need a different deployment design |
 | Export HTML and Markdown rather than build a large app | Keeps attention on research and the complete data workflow | The user cannot change all inputs through a browser interface |
 | Keep individual network evidence empty | General institutional pages do not establish a student's actual coverage | Insurance functionality currently provides verification prompts |
 | Use labeled synthetic fixtures in a rollback transaction | Exercises version and conflict logic without inventing real insurance findings | Test cases cannot establish real network accuracy |

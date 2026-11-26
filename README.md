@@ -115,6 +115,6 @@ The dataset is small and locally focused. Review intervals are project maintenan
 
 Next steps are to test appointment-preparation tasks with international students, review wording with a healthcare professional, improve Chinese translation, and add plan-specific data only when its scope and update process can be verified. The [future user-study protocol](docs/research_design.md) explains how task completion, time, and misunderstanding could be measured.
 
-This project extends an introductory relational-model lab into an end-to-end workflow. AI assistance was used for source collection, testing, and documentation. Design decisions, source limits, and tests are documented so others can review and extend the work. The repository does not claim to have performed user research or independent clinical validation.
+AI assistance was used for source collection, testing, and documentation. Design decisions, source limits, and tests are documented so others can review and extend the work. The repository does not claim to have performed user research or independent clinical validation.
 
 Code and original project materials use the MIT License. Linked source pages retain their original ownership and terms; see [data attribution](data/README.md).
